@@ -30,7 +30,8 @@ Follow-up: Could you solve the problem in linear time and in O(1) space?
  * @return {number}
  */
 var majorityElement = function (nums) {
-    let majority = nums[0], votes = 1;
+    let majority = nums[0]
+    let votes = 1
 
     for (let i = 1; i < nums.length; i++) {
         if (votes === 0) {

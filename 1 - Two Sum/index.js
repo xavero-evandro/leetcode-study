@@ -43,9 +43,7 @@ var twoSum = function (nums, target) {
     const hashMap = {};
 
     while (end >= 0) {
-        console.log(`### - hashMap:`, hashMap)
         const n1 = target - nums[end];
-        console.log(`### - n1:`, n1)
 
         if (hashMap[n1]) {
             return [end, hashMap[n1]];
